@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickNotes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>QuickNotes</h1>
+    <p>Jot it down before you forget it.</p>
+  </header>
+
+  <main>
+    <section id="add-section" aria-labelledby="add-heading">
+      <h2 id="add-heading">Add a note</h2>
+      <form id="note-form" novalidate>
+        <label for="note-input">Note</label>
+        <input type="text" id="note-input" name="note" placeholder="Write a note" autocomplete="off">
+        <select id="note-category" name="category" aria-label="Category">
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="study">Study</option>
+        </select>
+        <button type="submit">Add Note</button>
+      </form>
+      <p id="error-message" role="alert"></p>
+    </section>
+
+    <section id="notes-section" aria-labelledby="list-heading">
+      <h2 id="list-heading">Your notes</h2>
+      <label for="search-input" class="visually-hidden">Search notes</label>
+      <input type="search" id="search-input" placeholder="Search notes">
+      <p id="note-count"></p>
+      <ul id="notes-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>QuickNotes &copy; 2026. Notes are saved in your browser.</p>
+  </footer>
+</body>
+</html>
