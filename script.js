@@ -1,2 +1,2 @@
-[main af349c2] Add notes with categoriescat
- 1 file changed, 2 insertions(+)
+[main 02d087d] Add validation, delete and countcat
+ 1 file changed, 2 insertions(+), 2 deletions(-)
